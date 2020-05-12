@@ -7,11 +7,9 @@
 //
 
 import UIKit
-
 class WordsTableViewController: UITableViewController {
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A value that can change after it’s been initialized, indicated in Swift by the var keyword."), VocabularyWord(word: "Constant", definition: "A value that’s initialized once and cannot change, indicated in Swift by the let keyword."), VocabularyWord(word: "Class", definition: "A piece of code that describes the behavior and properties common to any particular type of object, essentially providing a blueprint for the object.")]
     
-
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A value that can change after it’s been initialized, indicated in Swift by the 'var' keyword."), VocabularyWord(word: "Constant", definition: "A value that’s initialized once and cannot change, indicated in Swift by the 'let' keyword."), VocabularyWord(word: "Class", definition: "A piece of code that describes the behavior and properties common to any particular type of object, essentially providing a blueprint for the object.")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -98,4 +96,5 @@ class WordsTableViewController: UITableViewController {
     }
     
 }
+
 
