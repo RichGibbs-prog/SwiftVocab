@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Words Table View Controller-->
+        <!--Swift Vocabulary-->
         <scene sceneID="xvt-ic-zKI">
             <objects>
                 <tableViewController id="lhN-Ui-61k" customClass="WordsTableViewController" customModule="SwiftVocabulary" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ta1-4Q-1I6" style="IBUITableViewCellStyleDefault" id="Osl-Yw-Ssv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordCell" textLabel="ta1-4Q-1I6" style="IBUITableViewCellStyleDefault" id="Osl-Yw-Ssv">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Osl-Yw-Ssv" id="AHj-rM-Ku8">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="lhN-Ui-61k" id="nQJ-cH-Uhj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7H5-Tb-v3b"/>
+                    <navigationItem key="navigationItem" title="Swift Vocabulary" id="7H5-Tb-v3b"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lnw-Xf-xcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,6 +83,10 @@
                         <viewLayoutGuide key="safeArea" id="iZH-ag-4yF"/>
                     </view>
                     <navigationItem key="navigationItem" id="y7H-6b-0Y6"/>
+                    <connections>
+                        <outlet property="definitionText" destination="aZF-2x-M2i" id="6fr-9P-RGW"/>
+                        <outlet property="vocabWordLabel" destination="3dx-xO-7Rg" id="Mcp-IJ-fXn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPb-9M-KH7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

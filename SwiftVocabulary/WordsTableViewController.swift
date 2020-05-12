@@ -9,7 +9,7 @@
 import UIKit
 
 class WordsTableViewController: UITableViewController {
-    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A value that can change after it’s been initialized, indicated in Swift by the var keyword.")]
+    var vocabWords: [VocabularyWord] = [VocabularyWord(word: "Variable", definition: "A value that can change after it’s been initialized, indicated in Swift by the var keyword."), VocabularyWord(word: "Constant", definition: "A value that’s initialized once and cannot change, indicated in Swift by the let keyword.")]
     
 
         // Uncomment the following line to preserve selection between presentations
